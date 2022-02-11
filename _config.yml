@@ -1,7 +1,7 @@
 # 头部菜单，title: link
 menu:
   首页: /
-  分类: /categories
+  # 分类: /categories
   标签: /tags
   归档: /archives  
   关于: /about
@@ -35,7 +35,7 @@ mathjax: false
 
 
 # 是否关闭默认滚动条
-scrollbar: true
+scrollbar: false
 
 # 本地搜索,请将索引文件放在网站根目录,或修改主题js文件的path值
 local_search:
