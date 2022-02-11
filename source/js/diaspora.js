@@ -619,7 +619,7 @@ $(function() {
 					gitalk.render('gitalk-container')
 					Diaspora.loaded();
 				}else{
-					$('#gitalk-container').html("评论已关闭");
+					$('#gitalk-container').html("不用点了，没有更多了ψ(｀∇´)ψ");
 				}
                 return false;
                 break;
