@@ -105,8 +105,10 @@ var Diaspora = {
                     comment.click();
                 }
             }, 0)
-            var math = document.getElementById("single")
-            MathJax.Hub.Queue(["Typeset", MathJax.Hub, math])
+            if (window.MathJax) {
+                var math = document.getElementById("single")
+                MathJax.Hub.Queue(["Typeset", MathJax.Hub, math])
+            }
         })
     },
     preview: function() {
@@ -392,7 +394,7 @@ $(function() {
 			}
 		})
 	};
-	var path = "/search.xml";
+	var path = window.searchDbPath || "/search.xml";
 	if(document.getElementById('local-search-input') !== null){
 		searchFunc(path, 'local-search-input', 'local-search-result');
 	}
